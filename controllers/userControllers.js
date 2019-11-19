@@ -11,7 +11,11 @@ exports.logout = function() {
 exports.register = function(req, res) {
   let user = new User(req.body)
   user.register()
-  res.send("Thanks for trying to register")
+  if (user.errors.length) {
+    res.send(user.errors)
+  } else {
+    res.send("Congrats, you are registered")
+  }
 }
 
 exports.home = function(req, res) {
