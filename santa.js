@@ -1,6 +1,5 @@
 const express = require('express')
 const santa = express()
-console.log(router)
 
 const router = require('./router')
 
