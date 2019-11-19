@@ -1,6 +1,7 @@
 const express = require('express')
 const santa = express()
 
+santa.use(express.static('public'))
 santa.set('views', 'views')
 santa.set('view engine', 'ejs')
 
