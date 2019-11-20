@@ -1,4 +1,5 @@
-const UserCollection = require('../db').collection("users")
+const bcrypt = require("bcryptjs")
+const userCollection = require('../db').collection("users")
 const validator = require('validator')
 
 let User = function(data) {
@@ -28,6 +29,21 @@ User.prototype.validate = function() {
   if (this.data.username.length > 0 && this.data.username.length < 3) {this.errors.push("Username must be at least 3 characters.")}
   if (this.data.username.length > 20) {this.errors.push("Username cannot exceed 20 characters.")}
 }
+
+User.prototype.login = function() {
+  return new Promise((resolve, reject) => {
+    this.cleanUp()
+    userCollection.findOne({username: this.data.username}).then((attemtedUser) =>{
+      if (attemtedUser && attemtedUser.password == this.data.password) {
+        resolve("Congrats!")
+      } else {
+        reject("Invalid username/password")
+      }
+    }).catch(function() {
+      reject("Please try again later!")
+    })
+  })
+}
  
 User.prototype.register = function() {
   this.cleanUp()
@@ -36,7 +52,11 @@ User.prototype.register = function() {
   //this.validate is the same as user.validate
   //Step 2: Only if no validation errors, then save the user data into a database
   if (!this.errors.length) {
-    UserCollection.insertOne(this.data)
+    // hash user password
+    let salt = bcrypt.genSaltSync(10)
+    this.data.password = bcrypt.hashSync(this.data.password, salt)
+    //check to see in UserCollection should be upperCase User or lowerCase user
+    userCollection.insertOne(this.data)
   }
 }
 
