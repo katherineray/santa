@@ -65,7 +65,7 @@ body, .tooltip
 
 .input-dark:focus {
   color: #FFFFFF;
-  background-color: #555;
+  background-color: rgb(158, 154, 154);
   border-color: #80bdff;
   outline: 0;
   box-shadow: 0 0 0 0.2rem rgba(0,123,255,.25);
