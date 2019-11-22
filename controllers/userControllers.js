@@ -1,19 +1,20 @@
 const User = require('../models/User')
 
-exports.login = function(req, res) {
+exports.login = function (req, res) {
   let user = new User(req.body)
-  user.login().then(function(result){
+  console.log("reached!")
+  user.login().then(function (result) {
     res.send(result)
-  }).catch(function(error) {
+  }).catch(function (error) {
     res.send(error)
   })
 }
 
-exports.logout = function() {
-  
+exports.logout = function () {
+
 }
 
-exports.register = function(req, res) {
+exports.register = function (req, res) {
   let user = new User(req.body)
   user.register()
   if (user.errors.length) {
@@ -23,6 +24,6 @@ exports.register = function(req, res) {
   }
 }
 
-exports.home = function(req, res) {
+exports.home = function (req, res) {
   res.render('home-guest')
 }
