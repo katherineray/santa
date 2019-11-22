@@ -4,8 +4,8 @@ dotenv.config()
 const mongodb = require('mongodb')
 
 
-mongodb.connect(process.env.MONGODB_URI || process.env.CONNECTIONSTRING, {useNewUrlParser: true, useUnifiedTopology: true}, function(err, client) {
-  module.exports = client.db()
+mongodb.connect(process.env.CONNECTIONSTRING, {useNewUrlParser: true, useUnifiedTopology: true}, function(err, client) {
+  module.exports = client.db("santa")
   const app = require('./app')
   app.listen(process.env.PORT)
 })
