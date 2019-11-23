@@ -2,14 +2,19 @@ const express = require('express')
 const app = express()
 
 const router = require('./router')
-
-app.use(express.urlencoded({extended: false}))
+const mongoose = require("mongoose");
+const dotenv = require('dotenv')
+dotenv.config()
+const mongodb = require('mongodb')
+app.use(express.urlencoded({ extended: false }))
 app.use(express.json())
 
 app.use(express.static('public'))
-app.set('views', 'views')
-app.set('view engine', 'ejs')
 
-app.use('/', router)
+app.use(router)
+
+app.post('/login', req => console.log(req))
+
+mongoose.connect(process.env.MONGODB_URI || process.env.CONNECTIONSTRING)
 
 module.exports = app

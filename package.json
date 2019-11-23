@@ -1,6 +1,7 @@
 {
-  "name": "santa",
+  "name": "santa-backend",
   "version": "1.0.0",
+<<<<<<< HEAD
   "description": "",
   "main": "santa.js",
   "scripts": {
@@ -10,13 +11,42 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
+=======
+  "description": "This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).",
+  "main": "server.js",
+>>>>>>> kr-sitecontent
   "dependencies": {
+    "axios": "^0.18.0",
     "bcryptjs": "^2.4.3",
     "dotenv": "^8.2.0",
-    "ejs": "^2.7.3",
     "express": "^4.17.1",
+    "if-env": "^1.0.4",
     "mongodb": "^3.3.4",
-    "nodemon": "^1.19.4",
-    "validator": "^12.0.0"
-  }
+    "mongoose": "^5.7.12",
+    "validator": "^12.1.0"
+  },
+  "devDependencies": {
+    "concurrently": "^4.1.2",
+    "nodemon": "^1.18.7"
+  },
+  "scripts": {
+    "start": "if-env NODE_ENV=production && npm run start:prod || npm run start:dev",
+    "start:prod": "node server.js",
+    "start:dev": "concurrently \"nodemon --ignore 'client/*'\" \"npm run client\"",
+    "client": "cd client && npm run start",
+    "seed": "node scripts/seedDB.js",
+    "install": "cd client && npm install",
+    "build": "cd client && npm run build",
+    "heroku-postbuild": "npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ClonieSMU/santa.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ClonieSMU/santa/issues"
+  },
+  "homepage": "https://github.com/ClonieSMU/santa#readme"
 }

@@ -1,5 +1,5 @@
 const bcrypt = require("bcryptjs")
-const userCollection = require('../db').collection("users")
+const userCollection = require('../server').collection("users")
 const validator = require('validator')
 
 let User = function(data) {
