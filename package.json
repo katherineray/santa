@@ -1,20 +1,8 @@
 {
   "name": "santa-backend",
   "version": "1.0.0",
-<<<<<<< HEAD
-  "description": "",
-  "main": "santa.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node db.js"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-=======
   "description": "This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).",
   "main": "server.js",
->>>>>>> kr-sitecontent
   "dependencies": {
     "axios": "^0.18.0",
     "bcryptjs": "^2.4.3",
