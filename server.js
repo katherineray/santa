@@ -3,12 +3,11 @@ const dotenv = require('dotenv')
 dotenv.config()
 const mongodb = require('mongodb')
 
-
-mongodb.connect(process.env.MONGODB_URI || process.env.CONNECTIONSTRING, {useNewUrlParser: true, useUnifiedTopology: true}, function(err, client) {
+mongodb.connect(process.env.MONGODB_URI || process.env.CONNECTIONSTRING, { useNewUrlParser: true, useUnifiedTopology: true }, function (err, client) {
   module.exports = client.db()
   const app = require('./app')
-  app.listen(process.env.PORT, test=> console.log("listening!"))
-  
+  app.listen(process.env.PORT, test => console.log("listening!"))
+
 })
 
 
