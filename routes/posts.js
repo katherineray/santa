@@ -1,25 +1,14 @@
 const express = require("express");
 const router = express.Router();
 const Post = require("../models/Post");
+
+const postController = require("../controllers/postControllers");
 var axios = require("axios");
 
-router.get("/", (req, res) => {
-  res.send("I want suya");
-});
-
-router.post("/", async (req, res) => {
-  const post = new Post({
-    title: req.body.title,
-    descrition: req.body.description
-  });
-
-  try {
-    const savedPost = await post.save();
-    res.json(savedPost);
-  } catch (err) {
-    res.json({ message: err });
-  }
-});
+router
+  .route("/")
+  .get(postController.findAll)
+  .post(postController.create);
 
 router.post("/search", (req, res) => {
   axios
