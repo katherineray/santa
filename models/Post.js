@@ -10,16 +10,16 @@ const PostSchema = mongoose.Schema({
     required: true
   },
   price: {
-    type: Integer,
+    type: Number,
     required: true
   },
   availability: {
     type: String,
     required: true
   },
-  date: {
-    type: Date,
-    default: Date.now
+  imgUrl: {
+    type: String,
+    required: true
   }
 });
 
