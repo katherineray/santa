@@ -13,7 +13,7 @@ import './assets/css/Navigation-Clean.css';
 
 function Dashboard() {
   return (
-   
+   <div>
       <div id="wrapper" style={{ backgroundColor: 'rgb(160, 0, 0)' }}>
         <div
           className="d-flex flex-column"
@@ -266,7 +266,7 @@ function Dashboard() {
                 </ul>
               </div>
             </nav>
-            <h1
+             <h1
               className="d-md-flex justify-content-md-center"
               style={{ color: 'white', fontFamily: "'Finger Paint', 'cursive'", height: '101px', fontSize: '42px' }}
             >
@@ -300,16 +300,14 @@ function Dashboard() {
                     style={{ backgroundImage: 'url("assets/img/plankedwood.jpg")', backgroundSize: 'cover', backgroundColor: 'transparent', padding: '8px', height: '140px' }}
                   >
                     <div className="card-body" style={{ height: '105px' }}>
-                      <h1
-                        className="d-flex d-md-flex justify-content-md-center align-items-md-end"
-                        style={{ height: '48px', color: 'rgb(13, 0, 163)', fontSize: '23px', fontFamily: "'Finger Paint', 'cursive'" }}
-                      >
+                      <h1 className="d-flex d-md-flex justify-content-md-center align-items-md-end"
+                        style={{ height: '48px', color: 'rgb(13, 0, 163)', fontSize: '23px', fontFamily: "'Finger Paint', 'cursive'" }}>
                         LETTERS TO SANTA
                     </h1>
                     </div>
                   </div>
                 </div>
-                <div className="col" style={{ height: '195px' }}>
+               <div className="col" style={{ height: '195px' }}>
                   <div className="card">
                     <div
                       className="card-body"
@@ -499,8 +497,8 @@ function Dashboard() {
                   </div>
                 </div>
               </div>
-            </div>
-          </div>
+            </div> 
+          </div> 
           <section
             className="countdown-section"
             style={{ backgroundImage: 'url("assets/img/joseph-keil-V9j3e5Dtvso-unsplash.jpg")', backgroundPosition: 'left', backgroundSize: 'cover', filter: "'contrast','102%'" }}
@@ -661,7 +659,7 @@ function Dashboard() {
           </footer>
         </div>
       </div>
-    
+      </div>
   );
 }
 
