@@ -1,16 +1,12 @@
 import React from 'react';
-import Dashboard from './pages/Dashboard/dashboardpage';
-// import './pages/Dashboard/assets/bootstrap/css/bootstrap.min.css';
-// import './pages/Dashboard/assets/bootstrap/css/dashboard.css';
-// import './pages/Dashboard/assets/css/Bold-BS4-Footer-Big-Logo.css';
-// import './pages/Dashboard/assets/css/Countdown.css';
-// import './pages/Dashboard/assets/css/Navigation-Clean.css';
-
+import './App.css';
+import moment from "moment";
 
 function App() {
   return (
-    <div> <Dashboard/>
-      {/* <header class="header-bar mb-3">
+     <div>
+      {-moment().diff("12/25/2019", "days")}
+      <header class="header-bar mb-3">
         <div class="container d-flex flex-column flex-md-row align-items-center p-3">
           <h4 class="my-0 mr-md-auto font-weight-normal"><a href="/" class="text-white">SantaPal</a></h4>
           <form action="/login" method="POST" class="mb-0 pt-2 pt-md-0">
@@ -34,7 +30,7 @@ function App() {
 
         <div class="row align-items-center">
           <div class="col-lg-7 py-3 py-md-5">
-            <h1 class="display-3">Write and Receive Letters From Santa!</h1>
+            <h1 class="display-3">SantaPal - Write Santa Letters!</h1>
             <p class="lead text-muted">Write letters to Santa, discover awesome new toys matched for you, and watch movies all holiday season! </p>
           </div>
           <div class="col-lg-5 pl-lg-5 pb-3 py-lg-5">
@@ -61,7 +57,6 @@ function App() {
           </div>
         </div>
       </div>
-    </div>*/}
     </div>
 
   );
