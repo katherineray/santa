@@ -26,5 +26,5 @@ exports.register = function (req, res) {
 
 exports.home = function (req, res) {
   res.json({"success":true})
-  //res.render('home-guest')
+  // res.render('home-guest')
 }
