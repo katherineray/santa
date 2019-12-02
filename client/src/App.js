@@ -1,7 +1,8 @@
-import React from "react";
+import React from 'react';
+import Home from './pages/Home';
+import Dashboard from './pages/Dashboard/dashboardpage';
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
-import Home from "./pages/Home";
-import Dashboard from "./pages/Dashboard/dashboardpage";
+
 
 function App() {
   return (
@@ -9,11 +10,12 @@ function App() {
       <div>
         <Switch>
           <Route exact path="/" component={Home} />
-          <Route exact path="/Dashboard" component={Dashboard} />
+
+          <Route exact path="/Dashboard" component={Dashboard}/>
         </Switch>
       </div>
     </Router>
-  );
-}
+    );
+  };
 
 export default App;
