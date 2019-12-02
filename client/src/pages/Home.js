@@ -1,11 +1,16 @@
 import React from "react";
-import moment from "moment";
+import Countdown from "./Countdown"
+
 
 function Home() {
     return(
         <div>
-      {-moment().diff("12/25/" + moment().year(), "days")}
-      <header class="header-bar mb-3">
+      <Countdown date="12/25"></Countdown>
+      <header class="header-bar mb-3" id="navheader" style={{
+          backgroundColor: "rgb(160, 0, 0)",
+          backgroundImage: 'url("assets/img/plankedwood.jpg")',
+          height: "69px"
+        }}>
         <div class="container d-flex flex-column flex-md-row align-items-center p-3">
           <h4 class="my-0 mr-md-auto font-weight-normal"><a href="/" class="text-white">SantaPal</a></h4>
           <form action="/login" method="POST" class="mb-0 pt-2 pt-md-0">
