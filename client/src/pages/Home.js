@@ -1,8 +1,10 @@
 import React from "react";
+import moment from "moment";
 
 function Home() {
     return(
         <div>
+      {-moment().diff("12/25/" + moment().year(), "days")}
       <header class="header-bar mb-3">
         <div class="container d-flex flex-column flex-md-row align-items-center p-3">
           <h4 class="my-0 mr-md-auto font-weight-normal"><a href="/" class="text-white">SantaPal</a></h4>
@@ -27,7 +29,7 @@ function Home() {
 
         <div class="row align-items-center">
           <div class="col-lg-7 py-3 py-md-5">
-            <h1 class="display-3">Write and Receive Letters From Santa!</h1>
+            <h1 id="left-cont-main" class="display-3">Write and Receive Letters From Santa!</h1>
             <p class="lead text-muted">Write letters to Santa, discover awesome new toys matched for you, and watch movies all holiday season! </p>
           </div>
           <div class="col-lg-5 pl-lg-5 pb-3 py-lg-5">
