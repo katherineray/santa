@@ -1,12 +1,10 @@
 const express = require("express");
 const router = express.Router();
-const Post = require("../models/Post");
-
 const postController = require("../controllers/postControllers");
 var axios = require("axios");
 
 router
-  .route("/")
+  .route("/post")
   .get(postController.findAll)
   .post(postController.create);
 
