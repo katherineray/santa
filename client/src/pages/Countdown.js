@@ -7,7 +7,7 @@ function Countdown(props){
     return(
        <section
         className="countdown-section"
-        style={{ backgroundImage: 'url("assets/img/joseph-keil-V9j3e5Dtvso-unsplash.jpg")', backgroundPosition: 'left', backgroundSize: 'cover', filter: "'contrast','102%'" }}
+        style={{ backgroundImage: 'url("assets/img/blurredlights.jpg")', backgroundPosition: 'left', backgroundSize: 'cover', filter: "'contrast','102%'" }}
       >
         <h1 style={{ backgroundColor: 'rgb(160, 0, 0)', fontFamily: "'Finger Paint', 'cursive'" }}>
           Santa Arrives In
