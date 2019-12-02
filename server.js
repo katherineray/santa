@@ -10,20 +10,11 @@ dotenv.config();
 app.use(express.urlencoded({ extended: false }));
 app.use(express.json());
 
-<<<<<<< HEAD
-mongodb.connect(process.env.MONGODB_URI || process.env.CONNECTIONSTRING, { useNewUrlParser: true, useUnifiedTopology: true }, function (err, client) {
-  module.exports = client.db()
-  const app = require('./app')
-  app.listen(process.env.PORT, test => console.log("listening!"))
-
-})
-=======
 app.use(express.static("public"));
 
 app.use(router);
 app.use(postRoutes);
 app.post("/login", req => console.log(req));
->>>>>>> ee4d28bbf8c8d679a9d5d531584765809fca440a
 
 mongoose.connect(process.env.MONGODB_URI || process.env.CONNECTIONSTRING, {
   useNewUrlParser: true,
