@@ -4,7 +4,7 @@ import Countdown from "./Countdown"
 
 function Home() {
     return(
-        <div>
+        <div style={{backgroundColor:"rgb(160,0,0"}}>
       <Countdown date="12/25"></Countdown>
       <header class="header-bar mb-3" id="navheader" style={{
           backgroundColor: "rgb(160, 0, 0)",
