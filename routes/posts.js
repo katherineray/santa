@@ -16,7 +16,7 @@ router.post("/search", (req, res) => {
       "https://svcs.ebay.com/services/search/FindingService/v1?OPERATION-NAME=findItemsByKeywords&RESPONSE-DATA-FORMAT=JSON&SECURITY-APPNAME=" +
         process.env.SANTA_API_KEY +
         "&REST-PAYLOAD&keywords=" +
-        req.body.query
+        req.body.title
     )
     .then(function(response) {
       res.json(

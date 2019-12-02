@@ -10,10 +10,12 @@ function App() {
       <div>
         <Switch>
           <Route exact path="/" component={Home} />
+
           <Route exact path="/Dashboard" component={Dashboard}/>
         </Switch>
       </div>
     </Router>
     );
   };
+
 export default App;
