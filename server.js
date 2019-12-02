@@ -1,10 +1,8 @@
 const express = require("express");
 const app = express();
-const router = require("./routes/router");
-const postRoutes = require("./routes/posts");
+const router = require("./routes");
 const mongoose = require("mongoose");
-app.use(router);
-app.use(postRoutes);
+
 const PORT = process.env.PORT || 5001;
 const dotenv = require("dotenv");
 dotenv.config();
@@ -12,8 +10,7 @@ dotenv.config();
 app.use(express.urlencoded({ extended: false }));
 app.use(express.json());
 
-
-
+app.use(router);
 // mongodb.connect(process.env.MONGODB_URI || process.env.CONNECTIONSTRING, { useNewUrlParser: true, useUnifiedTopology: true }, function (err, client) {
 //   module.exports = client.db()
 //   const app = require('./app')
