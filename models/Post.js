@@ -1,15 +1,19 @@
 const mongoose = require("mongoose");
 
 const PostSchema = mongoose.Schema({
-  productName: {
+  categoryName: {
     type: String,
     required: true
   },
-  category: {
+  itemId: {
     type: String,
     required: true
   },
-  price: {
+  title: {
+    type: String,
+    required: true
+  },
+  currentPrice: {
     type: Number,
     required: true
   },
@@ -17,7 +21,7 @@ const PostSchema = mongoose.Schema({
     type: String,
     required: true
   },
-  imgUrl: {
+  galleryUrl: {
     type: String,
     required: true
   }
