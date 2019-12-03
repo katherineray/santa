@@ -9,6 +9,7 @@ import './assets/css/Bold-BS4-Footer-Big-Logo.css';
 import './assets/css/Countdown.css';
 import './assets/css/Navigation-Clean.css';
 import Navbar from '../Navbar.js';
+import ClickList from "../../components/ClickList";
 
 // function Navbar(){
 //   (
@@ -115,48 +116,15 @@ function Dashboard(){
                 </h6>
                 </div>
                 <div className="card-body" style={{ backgroundColor: 'rgb(255, 255, 255)' }}>
-                  <h4 className="small font-weight-bold">
-                    Gift1<span className="float-right">100%</span>
-                  </h4>
-                  <div className="progress mb-4">
-                    <div
-                      className="progress-bar bg-success"
-                      aria-valuenow="100"
-                      aria-valuemin="0"
-                      aria-valuemax="100"
-                      style={{ width: '100%' }}
-                    >
-                      <span className="sr-only">100%</span>
-                    </div>
-                  </div>
-                  <h4 className="small font-weight-bold">
-                    Gift2<span className="float-right">80%</span>
-                  </h4>
-                  <div className="progress mb-4">
-                    <div
-                      className="progress-bar bg-info"
-                      aria-valuenow="80"
-                      aria-valuemin="0"
-                      aria-valuemax="100"
-                      style={{ width: '80%' }}
-                    >
-                      <span className="sr-only">80%</span>
-                    </div>
-                  </div>
-                  <h4 className="small font-weight-bold">
-                    Gift3<span className="float-right">60%</span>
-                  </h4>
-                  <div className="progress mb-4">
-                    <div
-                      className="progress-bar bg-primary"
-                      aria-valuenow="60"
-                      aria-valuemin="0"
-                      aria-valuemax="100"
-                      style={{ width: '60%' }}
-                    >
-                      <span className="sr-only">60%</span>
-                    </div>
-                  </div>
+            
+                  <ClickList list={[{name:"test1"}, {name:"test2"}, {name:"test3"},
+              {name:"test4"}, {name:"test5"}, {name:"test6"},
+              {name:"test7"}, {name:"test8"}, {name:"test9"}
+              
+              ]}></ClickList>
+                  
+                  
+                 
                 </div>
               </div>
             </div>
@@ -179,83 +147,7 @@ function Dashboard(){
                     Wish List
                 </h6>
                 </div>
-                <ul
-                  className="list-group list-group-flush"
-                  style={{ backgroundColor: 'rgb(12,62,29)' }}
-                >
-                  <li className="list-group-item">
-                    <div className="row align-items-center no-gutters">
-                      <div className="col mr-2">
-                        <h6 className="mb-0">
-                          <strong>wantedItem1</strong>
-                        </h6>
-                      </div>
-                      <div className="col-auto">
-                        <div className="custom-control custom-checkbox">
-                          <input
-                            className="custom-control-input"
-                            type="checkbox"
-                            id="formCheck-1"
-                          />
-                          <label
-                            className="custom-control-label"
-                            for="formCheck-1"
-                          ></label>
-                        </div>
-                      </div>
-                    </div>
-                  </li>
-                  <li className="list-group-item">
-                    <div className="row align-items-center no-gutters">
-                      <div className="col mr-2">
-                        <h6 className="mb-0">
-                          <strong>wantedItem2</strong>
-                        </h6>
-                      </div>
-                      <div className="col-auto">
-                        <div className="custom-control custom-checkbox">
-                          <input
-                            className="custom-control-input"
-                            type="checkbox"
-                            id="formCheck-2"
-                          />
-                          <label
-                            className="custom-control-label"
-                            for="formCheck-2"
-                          ></label>
-                        </div>
-                      </div>
-                    </div>
-                  </li>
-                  <li
-                    className="list-group-item"
-                    style={{ backgroundColor: 'rgb(255, 255, 255)' }}
-                  >
-                    <div className="row align-items-center no-gutters">
-                      <div
-                        className="col mr-2"
-                        style={{ backgroundColor: 'rgb(255, 255, 255)' }}
-                      >
-                        <h6 className="mb-0">
-                          <strong>wantedItem3</strong>
-                        </h6>
-                      </div>
-                      <div className="col-auto">
-                        <div className="custom-control custom-checkbox">
-                          <input
-                            className="custom-control-input"
-                            type="checkbox"
-                            id="formCheck-3"
-                          />
-                          <label
-                            className="custom-control-label"
-                            for="formCheck-3"
-                          ></label>
-                        </div>
-                      </div>
-                    </div>
-                  </li>
-                </ul>
+              <ClickList list={[{name:"test1"}, {name:"test2"}, {name:"test3"}]}></ClickList>
               </div>
             </div>
           </div>
