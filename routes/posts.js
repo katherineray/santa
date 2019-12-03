@@ -17,9 +17,8 @@ router.post("/search", (req, res) => {
         req.body.title
     )
     .then(function(response) {
-      res.json(
-        response.data.findItemsByKeywordsResponse[0].searchResult[0].item
-      );
+      console.log(response.data);
+      res.json(response.data.findItemsByKeywordsResponse[0].searchResult);
       //test.findItemsByKeywordsResponse[0].searchResult[0].item[0]
     })
     .catch(function(error) {
