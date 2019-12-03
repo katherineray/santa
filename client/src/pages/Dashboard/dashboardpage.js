@@ -1,4 +1,4 @@
-import React from "react";
+import React, {Component} from "react";
 import Countdown from "../Countdown";
 
 
@@ -19,7 +19,55 @@ import ClickList from "../../components/ClickList";
 //   )
 // }
 
-function Dashboard(){
+class Dashboard extends Component{
+
+  state = {
+    santasList: [{name:"test1"}, {name:"test2"}, {name:"test3"},
+    {name:"test4"}, {name:"test5"}, {name:"test6"},
+    {name:"test7"}, {name:"test8"}, {name:"test9"}
+    
+    ],
+    wishList: []
+    
+  };
+
+  toyClicked_WishList = (name, i) => {
+
+   var test = this.state.wishList.splice(i, 1)
+   console.log(test);
+    this.state.santasList.push({name:name});  
+    console.log(name);
+    console.log("wishList!")
+
+    this.setState( this.state.wishList)
+    
+    this.setState( this.state.santasList)
+  }
+
+  toyClicked_SantaList  = (name, i) => {
+
+
+    var test = this.state.santasList.splice(i, 1)
+    console.log(test);
+    this.state.wishList.push({name:name});
+    
+    console.log(name);
+    console.log("santaList!")
+
+    
+    this.setState( this.state.wishList)
+    
+    this.setState( this.state.santasList)
+  }
+
+
+  
+
+
+  render(){
+
+
+  
   return(
     <div><div id="wrapper" style={{ backgroundColor: 'rgb(160, 0, 0)' }}>
     <div
@@ -117,11 +165,7 @@ function Dashboard(){
                 </div>
                 <div className="card-body" style={{ backgroundColor: 'rgb(255, 255, 255)' }}>
             
-                  <ClickList list={[{name:"test1"}, {name:"test2"}, {name:"test3"},
-              {name:"test4"}, {name:"test5"}, {name:"test6"},
-              {name:"test7"}, {name:"test8"}, {name:"test9"}
-              
-              ]}></ClickList>
+                  <ClickList list={this.state.santasList} onClick={this.toyClicked_SantaList}></ClickList>
                   
                   
                  
@@ -147,7 +191,7 @@ function Dashboard(){
                     Wish List
                 </h6>
                 </div>
-              <ClickList list={[{name:"test1"}, {name:"test2"}, {name:"test3"}]}></ClickList>
+              <ClickList list={this.state.wishList} onClick={this.toyClicked_WishList}></ClickList>
               </div>
             </div>
           </div>
@@ -315,6 +359,8 @@ function Dashboard(){
     </div>
   </div></div>
   )
+}
+
 }
 
       
