@@ -1,8 +1,6 @@
 import React from "react";
 import Countdown from "../Countdown";
 
-
-
 import './assets/bootstrap/css/bootstrap.min.css';
 import './assets/bootstrap/css/dashboard.css';
 import './assets/css/Bold-BS4-Footer-Big-Logo.css';
