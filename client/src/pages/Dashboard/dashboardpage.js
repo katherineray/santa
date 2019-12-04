@@ -1,15 +1,20 @@
 import React, {Component} from "react";
 import Countdown from "../Countdown";
-
-
-
+import Navbar from '../Navbar.js';
+import Letters from '../LettersPage/Letters';
 import './assets/bootstrap/css/bootstrap.min.css';
 import './assets/bootstrap/css/dashboard.css';
 import './assets/css/Bold-BS4-Footer-Big-Logo.css';
 import './assets/css/Countdown.css';
 import './assets/css/Navigation-Clean.css';
+<<<<<<< HEAD
 import Navbar from '../Navbar.js';
 import ClickList from "../../components/ClickList";
+=======
+
+
+
+>>>>>>> frontEnd
 
 // function Navbar(){
 //   (
@@ -80,6 +85,7 @@ class Dashboard extends Component{
     >
       <div id="content" style={{ backgroundColor: 'rgb(160, 0, 0)' }}>
     <Navbar></Navbar>
+    
          <h1
           className="d-md-flex justify-content-md-center"
           style={{ color: 'white', fontFamily: "'Finger Paint', 'cursive'", height: '101px', fontSize: '42px' }}
@@ -371,8 +377,19 @@ class Dashboard extends Component{
               </div>
             </div>
           </div>
+<<<<<<< HEAD
           <Countdown date="12/25"></Countdown>
           {/* <section
+=======
+        </div> 
+      </div> 
+      <Countdown date="12/25"></Countdown>
+      
+      
+      
+      {/* COUNTDOWN CODE  */}
+      {/* <section
+>>>>>>> frontEnd
         className="countdown-section"
         style={{ backgroundImage: 'url("assets/img/joseph-keil-V9j3e5Dtvso-unsplash.jpg")', backgroundPosition: 'left', backgroundSize: 'cover', filter: "'contrast','102%'" }}
       >
@@ -449,11 +466,21 @@ class Dashboard extends Component{
           </div>
         </div>
       </section> */}
+<<<<<<< HEAD
           <footer class="d-flex d-lg-flex flex-wrap justify-content-lg-center" id="myFooter" style={{ backgroundImage: 'url(assets/img/plankedwood.jpg)', backgroundSize: 'cover' }}>
             <div class="container-fluid flex-fill justify-content-center">
               <div class="row d-flex d-lg-flex mx-auto justify-content-lg-center text-center" style={{ width: '1148px' }}>
                 <div class="col-12 col-sm-6 col-md-3" style={{ backgroundColor: 'rgb(12, 62, 29)' }}>
                   <h1 class="logo" style={{ marginTop: '30px' }}><a href="#">&nbsp;SantaPal</a></h1>
+=======
+
+
+      {/* <footer class="d-flex d-lg-flex flex-wrap justify-content-lg-center" id="myFooter" style={{backgroundImage: 'url(assets/img/plankedwood.jpg)',backgroundSize: 'cover'}}>
+        <div class="container-fluid flex-fill justify-content-center">
+            <div class="row d-flex d-lg-flex mx-auto justify-content-lg-center text-center" style={{width: '1148px'}}>
+                <div class="col-12 col-sm-6 col-md-3" style={{backgroundColor: 'rgb(12, 62, 29)' }}>
+                    <h1 class="logo" style={{marginTop:'30px'}}><a href="#">&nbsp;SantaPal</a></h1>
+>>>>>>> frontEnd
                 </div>
                 <div
                   className="col-12 col-sm-6 col-md-2"
@@ -531,12 +558,20 @@ class Dashboard extends Component{
             </div>
           </footer>
         </div>
+<<<<<<< HEAD
       </div></div>
     )
   }
 }
 
 <<<<<<< HEAD
+=======
+      </footer> */}
+  
+    </div>
+  </div></div>
+  )
+>>>>>>> frontEnd
 }
 
       
