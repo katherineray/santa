@@ -42,7 +42,7 @@ class Home extends React.Component {
 
   render() {
     return (
-      <div style={{ backgroundColor: "rgb(160,0,0" }}>
+      <div style={{ backgroundColor: "rgb(160,0,0)" }}>
         <Countdown date="12/25"></Countdown>
         <header
           class="header-bar mb-3"
@@ -97,7 +97,7 @@ class Home extends React.Component {
 
         <div class="row align-items-center">
           <div class="col-lg-7 py-3 py-md-5">
-            <h1 id="left-cont-main" class="display-3">
+            <h1 class="display-3">
               Write and Receive Letters From Santa!
             </h1>
             <p class="lead text-muted">

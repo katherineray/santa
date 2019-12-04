@@ -1,24 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import "./index.css";
-// import App from "./App";
-//import * as serviceWorker from "./serviceWorker";
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
-import Home from "./pages/Home";
-import Dashboard from "./pages/Dashboard/dashboardpage";
-
-function App() {
-  return (
-    <Router>
-      <div>
-        <Switch>
-          <Route exact path="/" component={Home} />
-          <Route exact path="/Dashboard" component={Dashboard} />
-        </Switch>
-      </div>
-    </Router>
-  );
-}
+import App from "./App.js";
 
 ReactDOM.render(<App />, document.getElementById("root"));
 

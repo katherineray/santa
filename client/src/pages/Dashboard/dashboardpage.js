@@ -1,14 +1,15 @@
 import React from "react";
 import Countdown from "../Countdown";
-
-
-
+import Navbar from '../Navbar.js';
+import Letters from '../LettersPage/Letters';
 import './assets/bootstrap/css/bootstrap.min.css';
 import './assets/bootstrap/css/dashboard.css';
 import './assets/css/Bold-BS4-Footer-Big-Logo.css';
 import './assets/css/Countdown.css';
 import './assets/css/Navigation-Clean.css';
-import Navbar from '../Navbar.js';
+
+
+
 
 // function Navbar(){
 //   (
@@ -28,6 +29,7 @@ function Dashboard(){
     >
       <div id="content" style={{ backgroundColor: 'rgb(160, 0, 0)' }}>
     <Navbar></Navbar>
+    
          <h1
           className="d-md-flex justify-content-md-center"
           style={{ color: 'white', fontFamily: "'Finger Paint', 'cursive'", height: '101px', fontSize: '42px' }}
@@ -262,6 +264,10 @@ function Dashboard(){
         </div> 
       </div> 
       <Countdown date="12/25"></Countdown>
+      
+      
+      
+      {/* COUNTDOWN CODE  */}
       {/* <section
         className="countdown-section"
         style={{ backgroundImage: 'url("assets/img/joseph-keil-V9j3e5Dtvso-unsplash.jpg")', backgroundPosition: 'left', backgroundSize: 'cover', filter: "'contrast','102%'" }}
@@ -339,7 +345,9 @@ function Dashboard(){
           </div>
         </div>
       </section> */}
-      <footer class="d-flex d-lg-flex flex-wrap justify-content-lg-center" id="myFooter" style={{backgroundImage: 'url(assets/img/plankedwood.jpg)',backgroundSize: 'cover'}}>
+
+
+      {/* <footer class="d-flex d-lg-flex flex-wrap justify-content-lg-center" id="myFooter" style={{backgroundImage: 'url(assets/img/plankedwood.jpg)',backgroundSize: 'cover'}}>
         <div class="container-fluid flex-fill justify-content-center">
             <div class="row d-flex d-lg-flex mx-auto justify-content-lg-center text-center" style={{width: '1148px'}}>
                 <div class="col-12 col-sm-6 col-md-3" style={{backgroundColor: 'rgb(12, 62, 29)' }}>
@@ -419,7 +427,8 @@ function Dashboard(){
             </div>
           </div>
         </div>
-      </footer>
+      </footer> */}
+  
     </div>
   </div></div>
   )
