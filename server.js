@@ -18,7 +18,7 @@ app.use(router);
 
 // })
 
-mongoose.connect(process.env.MONGODB_URI || process.env.CONNECTIONSTRING, {
+mongoose.connect(process.env.MONGODB_URI, {
   useNewUrlParser: true,
   useUnifiedTopology: true
 });
