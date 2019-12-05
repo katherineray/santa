@@ -4,6 +4,7 @@ import Dashboard from './pages/Dashboard/dashboardpage';
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Footer from "./pages/Footer"
 import Letters from "./pages/LettersPage/Letters";
+import Theatre from "./pages/Theatre/Theatre";
 
 
 function App() {
@@ -15,6 +16,7 @@ function App() {
 
           <Route exact path="/Dashboard" component={Dashboard}/>
           <Route exact path="/Letters" component={Letters}/>
+          <Route exact path="/Theatre" component={Theatre}/>
         </Switch>
       <Footer></Footer>
       </div>
