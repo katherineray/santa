@@ -11,7 +11,7 @@ function Letters(){
             <body id="page-top" style={{backgroundColor: 'rgb(126,16,16)',opacity: '1'}}>
             <Navbar></Navbar>
     <header className="border rounded-0 border-white shadow-lg d-lg-flex justify-content-lg-center align-items-lg-end" id="letterToSantaHeader" style={{height: '258px',backgroundColor: 'rgb(126,16,16)'}}>
-        <h1 className="border rounded-0 shadow-lg d-lg-flex justify-content-lg-center align-items-lg-center" id="letterToSantaHeaderBar" style={{color: 'rgb(255,255,255)',margin: '26px',fontSize: '59px',fontFamily: "'Finger Paint', 'cursive'",height: '204px',width: '710px',backgroundImage: 'url("./assets/img/plankedwood.jpg")',backgroundSize: 'cover',backgroundRepeat: 'round'}}>Letter To Santa<img src="./assets/img/SantaPalVector.PNG" style={{width: '263px',margin: '-81px'}}></img></h1>
+        <h1 className="border rounded-0 shadow-lg d-lg-flex justify-content-lg-center align-items-lg-center" id="letterToSantaHeaderBar" style={{color: 'rgb(255,255,255)',margin: '26px',fontSize: '59px',fontFamily: "'Finger Paint', 'cursive'",height: '204px',width: '710px',backgroundImage: 'url("./assets/img/plankedwood.jpg")',backgroundSize: 'cover',backgroundRepeat: 'round'}}>Letter To Santa<img src="./../public/santapal/SantaPalVector.PNG" style={{width: '263px',margin: '-81px'}}></img></h1>
     </header>
     <div className="container border rounded-0 border-dark shadow d-flex align-items-lg-center" style={{backgroundColor: 'rgb(8,8,8)',height: '679px',backgroundImage: 'url("./assets/img/markus-spiske-zv8MHAI2dTY-unsplash.jpg")',backgroundSize: 'auto',padding: '42px',backgroundRepeat: 'no-repeat'}}>
         <div className="d-lg-flex" style={{height: '157px',padding: '24px'}}></div>
